@@ -1,0 +1,83 @@
+
+
+.tableContainer {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableWrapper {
+    width: 70%;
+}
+
+.tableChildren {
+    background-attachment: fixed;
+    overflow: hidden;
+    filter: blur(90);
+    background: hsla(81, 92%, 44%, 0.8);
+    background: linear-gradient(90deg, hsla(81, 92%, 44%, 0.5) 0%, hsla(47, 100%, 80%, 0.8) 80%);
+    background: -moz-linear-gradient(45deg, hsla(81, 92%, 44%, 0.5) 0%, hsla(47, 100%, 80%, 0.8) 80%);
+    background: -webkit-linear-gradient(90deg, hsla(81, 92%, 44%, 0.5) 0%, hsla(47, 100%, 80%, 0.8) 80%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8dd509", endColorstr="#ffe99b", GradientType=1 );
+}
+
+.tableChildren p {
+    color: black;
+}
+
+.tableWrapper td {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1.7rem;
+}
+
+.grayed {
+    color: #0a9ef3;
+}
+
+.clickableName:not(.grayed) {
+    color: white;
+    text-decoration: underline;
+}
+
+.clickableName:hover {
+    color: gray;
+}
+
+.tableHeader {
+    background-color: var(--prime-black);
+    color: white;
+    font-weight: bold;
+}
+
+.headerRow p:nth-child(1) {
+    margin-left: 8vw;
+}
+
+.headerRow p:nth-child(2) {
+    margin-left: 12vw;
+}
+
+.headerRow p:nth-child(3) {
+    margin-left: 20vw;
+}
+
+.headerRow p:nth-child(4) {
+    margin-left: 4vw;
+}
+
+.headerRow p:nth-child(5) {
+    margin-left: 4vw;
+}
+
+.headerRow p:nth-child(6) {
+    margin-left: 4vw;
+}
+
+.loading-row {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}

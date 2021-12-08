@@ -1,0 +1,42 @@
+
+
+.teamRowData {
+    opacity: 1 !important;
+    display: flex;
+    align-items: center;
+}
+
+.teamRowData > * {
+    position: absolute;
+}
+
+.teamName {
+    margin-left: 8vw;
+}
+
+.imgWrapper img {
+    margin-left: 1vw;
+    margin-bottom: -0.2rem;
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+.teamPosition {
+    margin-left: 23.2vw;
+}
+
+.teamPG {
+    margin-left: 48vw;
+}
+
+.teamV {
+    margin-left: 53vw;
+}
+
+.teamE {
+    margin-left: 57.5vw;
+}
+
+.teamD {
+    margin-left: 62.5vw;
+}

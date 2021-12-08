@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --prime-green: #10502F;
+  --prime-yellow: #FFE15A;
+  --prime-black: #1C1D1A;
+  --main-bg: #D9EBEE;
+}
+
+::selection {
+  text-shadow: none;
+  color: #fff;
+  background-color: var(--prime-green);
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  user-select: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth; /* Smoothly animate to different sections within a page, only if the user doesn't mind animations */
+  }
+}
