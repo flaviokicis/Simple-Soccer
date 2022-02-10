@@ -1,26 +1,28 @@
 import axios from 'axios';
 import compareTeams from '../utils/sortObj.js';
 
+// Get table info
 const getTable = async (sortName) => {
     const config = {
         headers: { Authorization: `Bearer ${process.env.API_TOKEN}` }
     };
     try {
+    // Magic Number 10: ID of current tournament, this could be custom in the future
     const resp = await axios.get(process.env.API_ENDPOINT + '/campeonatos/10/tabela', config);
     const data = resp.data;
 
     // Return only necessary information
-    const infoData = data.map((team) => {
-        const info = {};
-        info["posicao"] = team.posicao;
-        info["pontos"] = team.pontos;
-        info["vitorias"] = team.vitorias;
-        info["derrotas"] = team.derrotas;
-        info["empates"] = team.empates;
-        info["nome"] = team.time.nome_popular;
-        info["escudo"] = team.time.escudo;
-        return info;
-    });
+    const infoData = data.map((team) => (
+        {
+            posicao: team.posicao,
+            pontos: team.pontos,
+            vitorias: team.vitorias,
+            derrotas: team.derrotas,
+            empates: team.empates,
+            nome: team.time.nome_popular,
+            escudo: team.time.escudo
+        }
+    ));
 
     // Sort
     if (sortName === true)
